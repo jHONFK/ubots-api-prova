@@ -1,0 +1,14 @@
+create database filmes;
+
+create table filme
+(
+id bigint not null identity(1,1),
+nome varchar(255),
+avaliado bit
+)
+
+INSERT INTO filme (nome, avaliado) VALUES ('O alto da compadecida',0);
+INSERT INTO filme (nome, avaliado) VALUES ('Velozes e Furiosos',1);
+INSERT INTO filme (nome, avaliado) VALUES ('A lista de schindler',1);
+
+select * from filme;
